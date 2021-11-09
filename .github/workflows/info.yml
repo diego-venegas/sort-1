@@ -2,7 +2,7 @@ name: Periodic Workflow
 
 on: 
   schedule:
-    - cron: '58 3 * * *'
+    - cron: '10,15,20 4 * * *'
 
 jobs:
   info:
@@ -11,10 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Imprimir nombre del workflow
-        run: echo ${{ github.workflow }}
+        run: echo '${{ github.workflow }}'
       - name: Imprimir nombre de repositorio y propietario
-        run: echo ${{ github.repository }}
+        run: echo '${{ github.repository }}'
       - name: Imprimir sistema operativo donde se ejecuta el trabajo
-        run: echo ${{ runner.os }}
+        run: echo '${{ runner.os }}'
       - name: Imprimir URL al servidor de GitHub
-        run: echo ${{ github.server_url }}
+        run: echo '${{ github.server_url }}'
