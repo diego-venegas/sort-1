@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Desplegar mensaje 
-      run: echo 'mensaje de prueba'
+      - name: Desplegar mensaje 
+        run: echo 'mensaje de prueba'
