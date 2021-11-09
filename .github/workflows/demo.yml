@@ -8,4 +8,4 @@ jobs:
 
     steps:
       - name: Desplegar mensaje 
-      - run: echo mensaje de prueba
+      - run: echo 'mensaje de prueba'
