@@ -16,4 +16,4 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }} 
       - name: Ejecución de pruebas
-        run: test_sort.py
+        run: python test_sort.py
