@@ -1,0 +1,11 @@
+name: Demo Workflow
+
+on: [push]
+
+jobs:
+  message:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Desplegar mensaje 
+      - run: echo mensaje de prueba
